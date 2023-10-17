@@ -1,0 +1,50 @@
+:root {
+    --preto-bg-inpe: #161617;
+    --amarelo-bg-inpe:#F29406;
+    --azul-bg-inpe:#0979B9;
+    --azulescuro-bg-inpe:#071d41;
+    --bege-bg-inpe:#E4DBCE;
+    --branco-bg-inpe:#FFFFFF;
+    
+}
+
+.conteudo-coids {
+    margin-top: 6rem;
+    margin-bottom: 22rem;
+}
+
+.subtitulo-padrao-conteudo {
+    text-transform: uppercase;
+    font-family: 'Rawline', Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 34.832px;
+    margin-bottom: 2rem;
+}
+
+.texto-padrao-conteudo {
+    font-family: 'Rawline', Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 0;
+}
+
+.table-header {
+    background-color: var(--azulescuro-bg-inpe);
+    color: var(--branco-bg-inpe);
+}
+
+.links_aplicacoes {
+    width: 100%;
+    height: 30rem;
+    flex-grow: 1; /* faz com que o conteúdo ocupe todo o espaço disponível */
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* para garantir que o rodapé fique sempre no final */
+}
+
+.list-group {
+    color: white;
+}

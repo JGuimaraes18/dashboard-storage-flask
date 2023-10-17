@@ -1,0 +1,2277 @@
+
+    <html>
+    <header>
+        <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/css/ambientevirtual.css"/>
+        <link rel="stylesheet" type="text/css" href="static/css/footer.css"/>
+        <title>Ambiente Virtual</title>
+    </header>
+    <body>
+        <nav class="navbar" id="header">
+            <div class="container" id="bloco-lg">
+                <a class="navbar-brand header-logo text-light d-flex align-items-center" href="/">
+                    <img src="/static/img/logo_COIDS_GRANDE.png" id="logo__coids" class="img-fluid" alt="logo__coids"/>
+                    <h1>COIDS</h1>
+                </a>
+                <div class="br-list w-50">
+                    <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/index.html#header">Home</a>
+                    <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/servicos.html">Serviços</a>
+                    <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/estatisticas.html">Estatísticas</a>
+                    <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/contato.html">Contato</a>
+                    <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/sobre.html">Sobre</a>
+                </div>
+
+                <div class="col-12">
+                    <div class="titulo_header">
+                        Coordenação de Infraestrutura de Dados <br> e Supercomputação
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+    <div class="page-content">        
+        <div class="container table_ambienteVirtual">
+            <table border="1" class="dataframe" id="table-Av">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>POOL</th>
+      <th>HOST</th>
+      <th>VM</th>
+      <th>Descrição</th>
+      <th>SO</th>
+      <th>CPU</th>
+      <th>Memória</th>
+      <th>STATUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>garoa1</td>
+      <td>[Operacional -  WEB-COIDS] - Servidora apache do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>meteoro</td>
+      <td>Servidora FreeIPA na DMZ</td>
+      <td></td>
+      <td>8</td>
+      <td>17179860992</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>big3_taixi</td>
+      <td>maquina temporaria bando de dados mysql</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>16</td>
+      <td>17179877376</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>vapor</td>
+      <td></td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589922304</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>crista</td>
+      <td></td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>8</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>temp02-141</td>
+      <td></td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>17179860992</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>chuvisco2</td>
+      <td>[Operacional -  WEB-COIDS] - Servidor tomcat do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>ubiru</td>
+      <td></td>
+      <td></td>
+      <td>32</td>
+      <td>34359746560</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>calmaria</td>
+      <td>[Operacional - WEB-COIDS] - Servidora Thredds</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>chuva2</td>
+      <td>[Operacional - WEB-COIDS] - Servidora Frontend Haproxy do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>vulcao</td>
+      <td>[Operacional - WEB-COIDS] - Servidor Varnish (Cache-Web) do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>chuva1</td>
+      <td>[Operacional - WEB-COIDS] - Servidora Frontend Haproxy do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao1</td>
+      <td>trovao2</td>
+      <td>[Operacional - WEB-COIDS] - Servidor Redis (aplicacao /vai-chover) do ambiente de producao web - SS</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>2</td>
+      <td>17188663296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>chuvisco1</td>
+      <td>[Operacional -  WEB-COIDS] - Servidor tomcat do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>geada3</td>
+      <td>[Operacional - WEB-COIDS] - Servidora back-end  Copernicus</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>17179856896</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>trovao</td>
+      <td>[Operacional -  WEB-COIDS] - Servidor Redis (cache de sessao web) do ambiente de producao web - SSS</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>17188663296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>granizo1</td>
+      <td>[Operacional -  WEB-COIDS] - ServiÃ§o de FTP (Novo)</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>neve</td>
+      <td>[Operacional - WEB-COIDS] - Servidor de mapas (mapserver) (maps.cptec.inpe.br)</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188663296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>tromba</td>
+      <td>[Operacional - WEB-COIDS] - Servidor configurado para o Servico NTP1.</td>
+      <td>Ubuntu 12.04.5 LTS</td>
+      <td>1</td>
+      <td>268435456</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>enchente</td>
+      <td>[Operacional - WEB-COIDS] - Servidor configurado para o Servico NTP2</td>
+      <td>Ubuntu 12.04.5 LTS</td>
+      <td>1</td>
+      <td>268435456</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>tapixaba</td>
+      <td></td>
+      <td></td>
+      <td>32</td>
+      <td>34359746560</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>vento</td>
+      <td>[Operacional -  WEB-COIDS] - Servidor Varnish (Cache-Web) do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>pororoca</td>
+      <td>[Operacional -  WEB-COIDS] - Servidor Varnish (Cache-Web) do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>big2-Tempestade</td>
+      <td></td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>34359726080</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>big1-Tornado</td>
+      <td></td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>34359726080</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>equinocio</td>
+      <td></td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>8589922304</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>garoa2</td>
+      <td>[Operacional -  WEB-COIDS] - Servidora apache do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>garoa3</td>
+      <td>[Operacional - WEB-COIDS] - Servidora apache do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>orvalho</td>
+      <td>[Operacional -  WEB-COIDS] - Servidor de mapas (mapserver) (maps.cptec.inpe.br)</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>chuvisco3</td>
+      <td>[Operacional - WEB-COIDS] - Servidor tomcat do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>DMZ_10GB_XEN_72</td>
+      <td>turbilhao2</td>
+      <td>chuva3</td>
+      <td>[Operacional - WEB-COIDS] - Servidora Frontend Haproxy do ambiente operacional Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>NEW_INT_72</td>
+      <td>tatu</td>
+      <td>braganca</td>
+      <td>[ DESENVOLVIMENTO - PROJETA ] Servidora para uso do Projeto Projeta</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NEW_INT_72</td>
+      <td>tatu</td>
+      <td>piranhas</td>
+      <td>[ PESQUISA - BRAMSRD ] Servidora de Pesquisa do grupo Bramsrd</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>batatais</td>
+      <td>[Operacional - Web - COIDS - V] - Servidora apache/tomcat do ambiente de demonstracao Web (Ex</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>1</td>
+      <td>4303749120</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>taboca</td>
+      <td>[Operacional - BD - DOP] - Servidora de carga do Postgres OBS (tatinga)</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>cajapio</td>
+      <td>[Teste - Web - COIDS - V] - Servidor Redis (cache de sessao web) do ambiente de teste web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>8598716416</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>tacareta</td>
+      <td>[Operacional - SysAdmin - SSS] - Servidora NTP - Munin - Repositorio CentOS (Xen)</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>tagoa</td>
+      <td>[Operacional - SysAdmin - SSS] - Servidora do OpenKM (Diego)</td>
+      <td>Ubuntu 16.04.2 LTS</td>
+      <td>2</td>
+      <td>2148532224</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>carpina</td>
+      <td>[Operacional - BD - DOP] - Servidora de carga do Postgres OBS (maua)</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>itarana</td>
+      <td>[Operacional - Goes - DSA] - Servidora Nevoeiro, Nuvens, Radiacao, Sanduiche, RGB e GLM Acumulado d</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>marau</td>
+      <td>[Operacional - WebTV - DOP] - Servidora WebTV + Manutencao /Public</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>2</td>
+      <td>2148532224</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>pratania</td>
+      <td>[Operacional - Nowcasting - DOP ] Produtos vai chover</td>
+      <td>Ubuntu 16.04.2 LTS</td>
+      <td>8</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>tejubina</td>
+      <td>[Operacional - Web - SSS] - Servidora do Servico Web para as aplicacoess MDb (mdb.cptec.inpe.br) e</td>
+      <td>Ubuntu 12.04.5 LTS</td>
+      <td>2</td>
+      <td>2147483648</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>malta</td>
+      <td>[Teste - Web - SSS - V] - Servidora Frontend Haproxy do ambiente de teste Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>2</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>uberaba</td>
+      <td>[Operacional - PrevOper - DOP] Servidora dos produtos PrevOper</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>sarandi</td>
+      <td>[Operacional - Web - SSS - V] - Servidora Frontend Haproxy do ambiente de demo Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>1</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>jaciara</td>
+      <td>[Operacional - Webcptec - DOP] - Servidora de repositorio de dados (share) do grupo webcptec (DSA e</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>1</td>
+      <td>1074790400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>galeao</td>
+      <td>[ PESQUISA - COPERNICUS ] Projeto Copernicus</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>figueira</td>
+      <td>[ PESQUISA - QQC ] Pesquisa de QuÃ­mica QuÃ¢ntica Computacional</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>8</td>
+      <td>34359750656</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>colina</td>
+      <td>[Operacional - Radar - DOP ] Produtos do Radar</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>iraquara</td>
+      <td>[ OPERACIONAL - COIDS - WEB ] Servidora do Portal sssn</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>tapeti</td>
+      <td>[Operacional - SysAdmin - SSS] - Servidora do XenCenter e OnCommand System Manager</td>
+      <td>Microsoft Windows Server 2012 R2 Standard|C</td>
+      <td>2</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>herculandia</td>
+      <td>[Operacional - Web - COIDS - V] - Servidora Deploy Web -Jenkins</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>2</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>jequitai</td>
+      <td>[ PESQUISA - APGMET ] Servidora de uso comum</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>NEW_INT_72</td>
+      <td>tanajura</td>
+      <td>colorado</td>
+      <td>[Pesquisa - CG - CG] Servidora de Pesquisa de uso comum</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>16</td>
+      <td>34360786944</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>marilena</td>
+      <td>[Operacional - Web - SSS - V] - Servidor varnish (cache-web) do ambiente de demonstracao Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>1</td>
+      <td>4303749120</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>dell-openmanage</td>
+      <td>Dell Openmanage Enterprise - Ferramenta de Gerenciamento Servidores Dell</td>
+      <td></td>
+      <td>4</td>
+      <td>17179856896</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>quilombo</td>
+      <td>[ OPERACIONAL - RADAR ] Servidor para uso do grupo radar</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>16</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>congonhas</td>
+      <td>[Operacional - WEB COIDS - FreeIPA Server - Replica]</td>
+      <td>CentOS Linux release 7.9.2009 (Core)</td>
+      <td>8</td>
+      <td>17179856896</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>bonito</td>
+      <td>[ DESENVOLVIMENTO - SYSADMIN ] Servidora de Desenvolvimento</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>12</td>
+      <td>137438945280</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>castelo</td>
+      <td>[ OPERACIONAL - SYSADMIN ] Teste do novo ambiente Virtual</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>2</td>
+      <td>4294979584</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>formoso</td>
+      <td>[ DESENVOLVIMENTO - IOPER ] MÃ¡quina de Desenvolvimento Para o Grupo SUBSAZ e IOPER</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>NEW_INT_72</td>
+      <td>tiba</td>
+      <td>dobrada</td>
+      <td>[ PESQUISA - COPERNICUS ] ambiente de teste para projeto censipam</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>17179860992</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>florianopolis</td>
+      <td>[ PESQUISA - COPERNICUS ] Projeto Copernicus</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>jambeiro</td>
+      <td>[ OPERACIONAL - COIDS - WEB ] Portal + scripts de monitoramento</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>2</td>
+      <td>4294979584</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>taguai</td>
+      <td>[ PESQUISA - QQC ] Pesquisa de QuÃ­mica QuÃ¢ntica Computacional</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>34359750656</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>baldim</td>
+      <td>[Desenvolvimento - Varios - DOP] - Servidora de Desenvolvimento Compartilhada</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>oliveira</td>
+      <td>[ OPERACIONAL - DBOPER ] Produtos do bdoper</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>bacabeira</td>
+      <td>[PESQUISA - WEB - COIDS] Teste Portal</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>1</td>
+      <td>2147495936</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>fama</td>
+      <td>[Operacional - SysAdmin - SSS] - Servidora Samba e Docs de varios Grupos</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>2</td>
+      <td>2148532224</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>sunray-b</td>
+      <td>[Operacional - SysAdmin - SSS] - Servidora Licenca MatLab - Sunray-B</td>
+      <td>Debian GNU/Linux 7.9 (wheezy)</td>
+      <td>1</td>
+      <td>536870912</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>taja</td>
+      <td>[Operacional - Radar - DOP ] Produtos do Radar</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>taubate</td>
+      <td>[ Pesquisa - Supercomputacao ] Lab</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>34359730176</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>birigui</td>
+      <td>[Teste - Web - COIDS - V] - Servidora apache/tomcat do ambiente de teste Web - (Ex</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>paraiso</td>
+      <td>[Desenvolvimento - IOPER - DOP] - ServiÃ§o de SMS para a PrevisÃ£o (Gempak)</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>tecoara</td>
+      <td>[Operacional - IOPER - DOP] - ServiÃ§o de SMS para a PrevisÃ£o (Nova)</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>goiatins</td>
+      <td>[Operacional - Web - COIDS - V] - Servidor Redis (cache de sessao web) do ambiente de demo web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>jabora</td>
+      <td>[Operacional - Visualizacao - DOP] - Servidora da intranet.cptec.inpe.br</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>sophia</td>
+      <td></td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>2</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>cotia</td>
+      <td>[ PESQUISA - SYSADMIN ] Teste Ocomon 3</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>concordia</td>
+      <td>[Operacional - Queimadas - DSA] - Servidora Queimadas</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>2</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>ilopolis</td>
+      <td>[Operacional - SysAdmin - SSS - V] - Servidora JupyterHub</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>caninde</td>
+      <td>[ OPERACIONAL - SYSADMIN ] Servidora de uso comum</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>piquete</td>
+      <td></td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>2</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>gramado_condaTESTE</td>
+      <td>Teste com o conda no novo ambiente Xen.</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>resende</td>
+      <td></td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>2</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>mage</td>
+      <td>[Desenvolvimento - CG - CG] - Servidora de Desenvolvimento Compartilhada</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>NEW_INT_72</td>
+      <td>terere</td>
+      <td>fronteira</td>
+      <td>[Operacional - Nowcasting - DOP] - Servidora do Nowcasting</td>
+      <td>Ubuntu 16.04.2 LTS</td>
+      <td>8</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>cezarina</td>
+      <td>[ OPERACIONAL - IOPER ] [ OPERACIONAL - SYSADMIN ] mÃ¡quina para instalaÃ§Ã£o da aplicaÃ§Ã£o CKAN C</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>floreal</td>
+      <td>[ OPERACIONAL - DBOPER ] Servidor de Banco de Dados PostgreSQL</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>calcado</td>
+      <td>[ OPERACIONAL - WEBCPTEC ] Servidora de uso comum</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>jacarezinho</td>
+      <td>[ OPERACIONAL - IOPER | SUBSAZ ] Servidor para geraÃ§Ã£o de produtos Subsaz</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>16</td>
+      <td>25769816064</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>baliza</td>
+      <td>[ PESQUISA - GRPETA | GRPETAMC ] MÃ¡quina CENAPAD</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>jerico</td>
+      <td>[ OPERACIONAL - SECCOIDS ] Servidor dados das SecretÃ¡rias por SSHFS</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>2</td>
+      <td>4294979584</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>itapebi</td>
+      <td>[Operacional - PP - DOP] - Servidora de Monitoramento do ECFlow</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>2</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>montanha</td>
+      <td></td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589926400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>itati</td>
+      <td>[ OPERACIONAL - CLIMA ] Servidora Clima</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>8</td>
+      <td>17179860992</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>petrolina</td>
+      <td>[ DESENVOLVIMENTO - DBOPER | IOPER | NOC | SYSADMIN ] Desenvolvimento Geral</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>guararapes</td>
+      <td>[Operacional] - Servidora Display</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589926400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>curitiba</td>
+      <td>[Operacional - SysAdmin - SSS - V] - Servidora para a montagem das Ã¡reas oper - scripts do NetApp</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>2</td>
+      <td>2148532224</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>condado</td>
+      <td>[ DESENVOLVIMENTO - SYSADMIN ] Servidor de Desenvolvimento do Grupo SYSADMIN - COIDS</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>juazeiro</td>
+      <td></td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589926400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>NEW_INT_72</td>
+      <td>terena</td>
+      <td>itapemirim</td>
+      <td>[Pesquisa - CG - CG] Servidora de Pesquisa de uso comum</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>mambai</td>
+      <td>[Desenvolvimento - CG - CG- Servidora de Desenvolvimento Compartilhada</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>paranaita</td>
+      <td>[Operacional - Goes - DSA] - Servidora Fortracc do Goes16</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>8598716416</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>ribeira</td>
+      <td>[Pesquisa - CG - CG] Pesquisa geral</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>ijaci</td>
+      <td>[Operacional - Chuva - DSA] - Servidora do Chuva</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>guarulhos1</td>
+      <td>[Operacional - Sysadmin - SSS] - Servidora NIS - Master</td>
+      <td>Ubuntu 18.04.2 LTS</td>
+      <td>4</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>guarulhos2</td>
+      <td>[Operacional - Sysadmin- SSS] - Servidora NIS - Slave</td>
+      <td>Ubuntu 18.04.2 LTS</td>
+      <td>4</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>satuba</td>
+      <td>[Operacional - BD - DOP] - Servidora do Pre-Processamento</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>tacyra</td>
+      <td>[Operacional - Visualizacao - DOP] - Servidora do Grafico</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>17188651008</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>urupema</td>
+      <td>[Desenvolvimento - Visualizacao - DOP] - Servidora AWIPS (CentOS)</td>
+      <td>CentOS Linux release 7.3.1611 (Core)</td>
+      <td>2</td>
+      <td>6182391808</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>salvador</td>
+      <td>[Operacional - Meteosat - DSA - VM] - Servidora de injestao e produtos do meteosat</td>
+      <td>Ubuntu 16.04.5 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>brejo</td>
+      <td>[ OPERACIONAL - SYSADMIN ] Novo Nagios</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>4</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>tatua</td>
+      <td>Servidora ECFlow Operacional do grupo Banco de Dados</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>34359730176</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>taperi</td>
+      <td>[Operacional - SysAdmin - SSS] - Gerencia dos Storage e Cisco MDS (Windows 2008)</td>
+      <td>MicrosoftÂ® Windows ServerÂ® 2008 Standard |C</td>
+      <td>2</td>
+      <td>4294959104</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>capela</td>
+      <td>[Operacional - Goes - DSA] - Servidora Hidro Goes16</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>itajobi</td>
+      <td>[Operacional - Previsaonumerica - DOP] - Servidor operacional do grupo previsao numerica (Visualiza</td>
+      <td>Ubuntu 16.04.5 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>minduri</td>
+      <td>[Operacional - Oceano - DSA - V] - Servidora do OCEANO (AQUA, TERRA e NPP)</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>2</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>viracopos</td>
+      <td>[Operacional - Supercomputacao - FreeIPA Server - Master]</td>
+      <td>CentOS Linux release 7.9.2009 (Core)</td>
+      <td>8</td>
+      <td>17179856896</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>barbalhas</td>
+      <td>[Operacional - Distribuicao - DSA] - Servidora de DistribuiÃ§Ã£o de dados de Satelites</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>suzano</td>
+      <td>[Operacional - Clima - DOP] - Servidora do Clima</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>jaguari</td>
+      <td>[Desenvolvimento - GPT - DOP] - Servidora Track (Carolina - PrevisÃ£o)</td>
+      <td>Ubuntu 16.04.5 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>NEW_INT_72</td>
+      <td>tucupi</td>
+      <td>borebi</td>
+      <td>[Pesquisa - CG - CG] Servidora de Pesquisa de uso comum</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>marapoama</td>
+      <td>[Operacional - NOAA/EPS/JPSS/EOS - DSA - V] - Servidora de ingestÃ£o e processamento NOAA, EPS, JPS</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>goias</td>
+      <td>[Operacional - PGMET- PGMET] - Servidora Licenca MatLab</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>1</td>
+      <td>1074790400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>indiana</td>
+      <td>[Operacional - Pana - DOP] Servidora do Produtos da ANA</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>japora</td>
+      <td>[Demo - Web - SSS - V] - Servidor de mapas (mapserver) (mapsdemo.cptec.inpe.br)</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>2</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>bacuri</td>
+      <td>[ PESQUISA - OCEANGRP ] Servidora de uso comum Acesso ao VNC</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>8</td>
+      <td>8589926400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>osasco</td>
+      <td>[Operacional - GPT - DOP] - Servidora Operacional VDM</td>
+      <td>Ubuntu 16.04.5 LTS</td>
+      <td>2</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>botupora</td>
+      <td>[Operacional - Goes - DSA] - Servidora Vento Goes16</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>itacurubi</td>
+      <td>[Teste - Web - COIDS - V] - Servidora varnish (cache-web) do ambiente de teste Web</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>estrela</td>
+      <td>[ DESENVOLVIMENTO - IOPER ] MÃ¡quina de Desenvolvimento Para o Grupo SUBSAZ e IOPER</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>8</td>
+      <td>17179877376</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>mansidao</td>
+      <td>01/09/2022</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>2</td>
+      <td>2147475456</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>urandi</td>
+      <td>[ OPERACIONAL - WEBCPTEC ] Servidora de uso comum</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>pontal</td>
+      <td>[Operacional - Raios - DSA] Servidora do Raios</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>2</td>
+      <td>4296015872</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>prainha</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>17179856896</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>cajari</td>
+      <td>[ DESENVOLVIMENTO - SYSADMIN ] Servidor de Teste e Desenvolvimento Grupo COIDS</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>itajai</td>
+      <td>[Operacional - AAPP - DSA] - Servidora AAPP</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>itanhandu</td>
+      <td>[ OPERACIONAL - DATASERVER ] Servidor de dados - dataserver</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>8589946880</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>brejetuba</td>
+      <td>[OPERACIONAL - SESUP] Pesquisa Ansible</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>2</td>
+      <td>4294979584</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>guaruja</td>
+      <td>[Teste - Web - COIDS - V] - Servidor de mapas (mapserver) (mapstest.cptec.inpe.br)</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>tabajy</td>
+      <td>[Operacional - GPT - DOP] - Servidora Gempak para o grupo de Previsao</td>
+      <td>Ubuntu 12.04.5 LTS</td>
+      <td>4</td>
+      <td>4294967296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>brumado</td>
+      <td>Lab LDM</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>8</td>
+      <td>17179860992</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>boituva</td>
+      <td>[Operacional - Sysadmin - SSS] - Ponte para postgres e mysql, acesso escritÃ³rio para DMZ</td>
+      <td>Ubuntu 16.04.4 LTS</td>
+      <td>1</td>
+      <td>1074790400</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>beberibe</td>
+      <td>[ OPERACIONAL - GOES ] Servidora operacional do grupo goes - web_tiles</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>8</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>pedreira</td>
+      <td>[ OPERACIONAL - COIDS - WEB ] Servidora prometheus + grafana</td>
+      <td>Ubuntu 20.04.2 LTS</td>
+      <td>4</td>
+      <td>17179881472</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>NEW_INT_72</td>
+      <td>toca</td>
+      <td>buique</td>
+      <td>[ OPERACIONAL - DISTRIBUICAO | WEBDSA ] Servidora operacional do grupo distribuicao e webdsa</td>
+      <td>Ubuntu 20.04.3 LTS</td>
+      <td>4</td>
+      <td>4294979584</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>tuba</td>
+      <td>tabai</td>
+      <td>[Desenvolvimento - BD - DOP] - Servidor do Banco de Dados para Desenvolvimento</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>4</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>tuba</td>
+      <td>tatinga</td>
+      <td>[Operacional - BD - DOP] Postgres OBS</td>
+      <td>Ubuntu 12.04.5 LTS</td>
+      <td>4</td>
+      <td>34359738368</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>tuba</td>
+      <td>faro</td>
+      <td>[Operacional - Clima - DOP] - Servidora Clima</td>
+      <td>Ubuntu 16.04.1 LTS</td>
+      <td>4</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>tuba</td>
+      <td>taciba</td>
+      <td>[Operacional - SysAdmin - SSS] - ServiÃ§o de NFS de montagem para as Ã¡reas home de usuÃ¡rios</td>
+      <td>Ubuntu 16.04.1 LTS</td>
+      <td>2</td>
+      <td>8590983168</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>tuba</td>
+      <td>maua</td>
+      <td>[ Operacional - BD - DOP ] Postgres OBS</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>2</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>toyuba</td>
+      <td>DellopenManage-Super</td>
+      <td>Dell Openmanage Enterprise</td>
+      <td></td>
+      <td>12</td>
+      <td>34359726080</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>toyuba</td>
+      <td>itaquara</td>
+      <td>[Operacional - BD - DOP] - Servidora AFD</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>PROD_LAN_(XEN-7.2)</td>
+      <td>toyuba</td>
+      <td>tajipuru</td>
+      <td>[Operacional - IOPER - DOP] - Servidora do Servico SMS (prevtempo.cptec.inpe.br)</td>
+      <td>Ubuntu 16.04.3 LTS</td>
+      <td>8</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>tororo</td>
+      <td>geada2</td>
+      <td>[Operacional - WEB-COIDS] - Servidora Front-end Copernicus</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>2</td>
+      <td>17188663296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>tororo</td>
+      <td>tabapira</td>
+      <td>[Operacional - BD-DIPTC] - ServiÃ§o Postgres da rede DMZ</td>
+      <td>Ubuntu 12.04.5 LTS</td>
+      <td>8</td>
+      <td>34359738368</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>tororo</td>
+      <td>tufao1</td>
+      <td>[Teste - WEB-COIDS] - Ambiente de log de aplicacoes</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>17188663296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>traira</td>
+      <td>nevoeiro</td>
+      <td>[Operacional - WEB-COIDS] - Projetos.cptec.inpe.br (Redmine + SVN)</td>
+      <td>Ubuntu 16.04.1 LTS</td>
+      <td>2</td>
+      <td>8598728704</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>traira</td>
+      <td>tornado</td>
+      <td>[Operacional - BD-DIPTC] - Postgres WEB</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>4</td>
+      <td>34360786944</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>toropy</td>
+      <td>taixi-old</td>
+      <td>[Operacional -  WEB-COIDS] - PROD - banco de dados MySQL</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>16</td>
+      <td>17180917760</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>toropy</td>
+      <td>tempestade</td>
+      <td>[Operacional - BD-DIPTC] - Postgres OBS</td>
+      <td>Ubuntu 16.04.7 LTS</td>
+      <td>4</td>
+      <td>34359738368</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>PROD_DMZ_(XEN-6.5)</td>
+      <td>toropy</td>
+      <td>geada</td>
+      <td>[Operacional - WEB-COIDS] - Servidora Docker do Copernicus</td>
+      <td>Ubuntu 16.04.6 LTS</td>
+      <td>2</td>
+      <td>25770852352</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus3</td>
+      <td>dns2</td>
+      <td>Servidor DNS SLAVE COIDS</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus3</td>
+      <td>argentina</td>
+      <td>Servidor  de CatÃ¡lagos BIG - GEOSERVER</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>8</td>
+      <td>34359738368</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus3</td>
+      <td>azerbaijao</td>
+      <td>HAPROXY - COIDS</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>4294967296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus3</td>
+      <td>armenia_temp</td>
+      <td></td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589934592</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus3</td>
+      <td>argelia</td>
+      <td>Servidor  de CatÃ¡lagos BIG - Postgresql</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>africa</td>
+      <td>Servidor  de VizualizaÃ§Ã£o de Imagens TCI - STAC - BIG</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>afeganistao</td>
+      <td>Servidor Web BIG</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589934592</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>zabbix-client-218</td>
+      <td>test client zabbix</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>4294967296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>austria</td>
+      <td>Servidor BIG</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>4294963200</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>albania</td>
+      <td>Servidor  de VizualizaÃ§Ã£o de Imagens TCI - TMS - BIG</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>alemanha</td>
+      <td>Servidor  de VizualizaÃ§Ã£o de Imagens TCI - Postgresql - BIG</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>arabia</td>
+      <td>Servidor  de CatÃ¡lagos BIG - GEONETWORK - BIG</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>angola</td>
+      <td>Servidor  de VizualizaÃ§Ã£o de Imagens TCI - TCO Extractor - BIG</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus2</td>
+      <td>australia</td>
+      <td>Servidor DATA SERVER - EMBRACE</td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>17179865088</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus1</td>
+      <td>owncloud</td>
+      <td>testes drive.coids</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>4294967296</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>179</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus1</td>
+      <td>dns1</td>
+      <td></td>
+      <td>Ubuntu 20.04.4 LTS</td>
+      <td>4</td>
+      <td>8589930496</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>COIDS_DMZ</td>
+      <td>pegasus1</td>
+      <td>fwcoids</td>
+      <td></td>
+      <td>FreeBSD 13.1-RELEASE-p2</td>
+      <td>16</td>
+      <td>34359734272</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>181</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>win7</td>
+      <td>Apache DirectoryStudio-2.0.0 -&gt; v20210717-M17</td>
+      <td>Microsoft Windows 7 Professional |C</td>
+      <td>4</td>
+      <td>8589934592</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>debian_212</td>
+      <td>Para teste do FreeIpa</td>
+      <td>Debian GNU/Linux 10 (buster)</td>
+      <td>4</td>
+      <td>4294963200</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>jacarezinho</td>
+      <td>Servidora REPLICA do FreeIPA COIDS</td>
+      <td>Rocky Linux release 8.6 (Green Obsidian)</td>
+      <td>8</td>
+      <td>17179865088</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>capricornus</td>
+      <td>Zabbix Server</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>4</td>
+      <td>4294963200</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>caete</td>
+      <td>Servidora PONTE das redes da COIDS</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>2</td>
+      <td>12884901888</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>florida</td>
+      <td>Servidora MASTER do FreeIPA COIDS</td>
+      <td>Rocky Linux release 8.7 (Green Obsidian)</td>
+      <td>8</td>
+      <td>17179865088</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda3</td>
+      <td>abuja</td>
+      <td>Servidora IDL DIAST</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>8</td>
+      <td>8589934592</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda2</td>
+      <td>windows7</td>
+      <td>temporÃ¡ria - conversÃ£o vm diblib - vou deletar apÃ³s o uso ! (gali)</td>
+      <td>Microsoft Windows 7 Professional |C</td>
+      <td>8</td>
+      <td>17179869184</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>189</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda2</td>
+      <td>abudabi</td>
+      <td>Servidor OpenMPI CORCR</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>32</td>
+      <td>68719472640</td>
+      <td>running</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>COIDS_INTERNA</td>
+      <td>andromeda4</td>
+      <td>jacupiranga</td>
+      <td>Servidora do Ansible</td>
+      <td>Ubuntu 20.04.5 LTS</td>
+      <td>2</td>
+      <td>4294967296</td>
+      <td>running</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    
+        <!-- Footer -->
+  <footer class="text-center text-lg-start fundo-escuro" id="footer">
+
+    <!-- Section: Links  -->
+    <section class="p-4">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <div class="footer">
+                <a class="navbar-brand header-logo text-light d-flex align-items-center" href="http://condado.cptec.inpe.br/site-gov-coids/index.html" id="footer">
+                  <img src="static/img/logo_COIDS_GRANDE-PhotoRoom.png" id="logo-coids" class="img-fluid"
+                    alt="logo-coids" />
+                  <h1>COIDS</h1>
+                </a>
+                <a class="navbar-brand header-logo text-light d-flex align-items-center mt-3"
+                  href="https://www.gov.br/inpe/pt-br" target="_blank">
+                  <img src="static/img/inpe_logo2023" id="logo-inpe" class="img-fluid" alt="logo-inpe" />
+                </a>
+              </div>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 titulo_footer">
+              Serviços
+            </h6>
+
+            <p>
+              <a class="text-reset" href="http://sssn.cptec.inpe.br/" target="_blank">3S Portal</a>
+            </p>
+            <p>
+              <a href="http://condado:8000/" class="text-reset" target="_blank">Netbox</a>
+            </p>
+            <p>
+              <a href="http://mansidao.cptec.inpe.br/wiki/" class="text-reset" target="_blank">Wiki</a>
+            </p>
+            <p>
+              <a href="http://juazeiro.cptec.inpe.br/ocomon_coids/login.php" class="text-reset"
+                target="_blank">Racktables</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 titulo_footer">
+              Estatísticas
+            </h6>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/estatisticas.html" class="text-reset">Aplicações</a>
+            </p>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/estatisticas.html" class="text-reset">Downloads</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 titulo_footer">
+              Contato
+            </h6>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/contato.html" class="text-reset">Secretaria</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Sobre</h6>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/sobre.html" class="text-reset">A COIDS</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="container">
+      <div class="text-center p-4 d-flex fonte-footer" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="col-6 text-medium">2023 © COIDS - Coordenação de Infraestrutura de Dados e Supercomputação</div>
+        <div class="col-6 text-medium">Desenvolvimento: COIDS/WEB</div>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#table-Av').DataTable({
+                // paging: false,    
+                // scrollY: 400,
+            });
+        });
+    </script>
+    </body>
+    </html>
+    

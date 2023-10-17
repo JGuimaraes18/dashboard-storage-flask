@@ -1,0 +1,86 @@
+:root {
+    --preto-bg-inpe: #161617;
+    --amarelo-bg-inpe:#F29406;
+    --azul-bg-inpe:#0979B9;
+    --azulescuro-bg-inpe:#071d41;
+    --bege-bg-inpe:#E4DBCE;
+    --branco-bg-inpe:#FFFFFF;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Anton';
+    src: url(/font/Anton-Regular.ttf);
+}
+
+.fundo-escuro {
+    background-color: var(--azulescuro-bg-inpe);
+}
+
+.subtitulo-padrao-conteudo {
+    text-transform: uppercase;
+    font-family: 'Rawline', Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 34.832px;
+    margin-bottom: 2rem;
+}
+
+.texto-padrao-conteudo {
+    font-family: 'Rawline', Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 0;
+}
+
+#logo-coids {
+    width: 4.5rem;
+}
+
+#logo-inpe {
+    width: 9rem;
+    /* background-color: var(--branco-bg-inpe);
+    border-radius: 50% ; */
+}
+
+#titulo-inpe {
+    font-family: 'Roboto', HelveticaNeue, Arial, sans-serif;
+    font-size: 3rem;
+    color: #0078BA;
+    text-shadow: 0.02em 0.01em var(--branco-bg-inpe);
+    font-weight: 400;
+}
+
+.fonte-footer {
+    font-family: 'Rawline', Raleway, sans-serif;
+    font-size: 11.662px;
+}
+
+.subtitulo_footer {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: auto; /* mantém o rodapé no final */
+    color:#C5D4EB;
+    font-family: 'Rawline', Raleway, sans-serif;
+}
+
+.footer h1{
+    color: var(--amarelo-bg-inpe);
+    text-shadow: 0.05em 0.01em var(--azul-bg-inpe);
+    font-family: 'Anton';
+    font-size: 3rem;
+}
+
+.fonte_footer p a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.fonte_footer p a:hover {
+    background-color: #0d2855;
+    text-shadow: 1px 1px 1.5px #476cac;
+    transform: scale(1.1); /* aumenta o tamanho */
+    transition: all 0.5s; /* adiciona transição suave */
+}

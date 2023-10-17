@@ -1,0 +1,639 @@
+
+    <html>
+    <header>
+        <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/css/armazenamento.css"/>
+        <link rel="stylesheet" type="text/css" href="static/css/footer.css"/>
+        <title>Armazenamento</title>
+    </header>
+    <body>
+    <nav class="navbar" id="header">
+        <div class="container" id="bloco-lg">
+            <a class="navbar-brand header-logo text-light d-flex align-items-center" href="/">
+                <img src="/static/img/logo_COIDS_GRANDE.png" id="logo__coids" class="img-fluid" alt="logo__coids"/>
+                <h1>COIDS</h1>
+            </a>
+            <div class="br-list w-30">
+                <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/index.html#header">Home</a>
+                <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/servicos.html">Serviços</a>
+                <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/estatisticas.html">Estatísticas</a>
+                <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/contato.html">Contato</a>
+                <a class="br-item" id="menu__header" href="http://condado.cptec.inpe.br/site-gov-coids/sobre.html">Sobre</a>
+            </div>
+
+            <div class="col-12">
+                <div class="titulo_header">
+                Coordenação de Infraestrutura de Dados <br> e Supercomputação
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="page-content">  
+    
+    <div class="container conteudo-coids">
+
+  <h1 class="text-center subtitulo-padrao-conteudo">OLINDA</h1> 
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item fonte-accordion">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <h4>Armazenamento</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="row d-flex align-items-center">
+            &nbsp;
+            <table border="1" class="dataframe" id="table-Olinda">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>Aggregate</th>
+      <th>Total (TB)</th>
+      <th>Usado (TB)</th>
+      <th>Disponível (TB)</th>
+      <th>% Usado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>aggr1_FSAS6TB_N6</td>
+      <td>303.6</td>
+      <td>65.12</td>
+      <td>238.47</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>aggr2_FSAS6TB_N6</td>
+      <td>303.6</td>
+      <td>11.99</td>
+      <td>291.6</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>aggr_FSAS10T03_N3</td>
+      <td>160.06</td>
+      <td>155.19</td>
+      <td>4.86</td>
+      <td>97.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>aggr_FSAS10T03_N4</td>
+      <td>320.12</td>
+      <td>276.16</td>
+      <td>43.95</td>
+      <td>86.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>aggr_FSAS10TB_N5</td>
+      <td>223.5</td>
+      <td>33.52</td>
+      <td>189.98</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>aggr_FSAS16T01_N1</td>
+      <td>295.11</td>
+      <td>290.6</td>
+      <td>4.5</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>aggr_FSAS16T01_N2</td>
+      <td>295.11</td>
+      <td>258.18</td>
+      <td>36.92</td>
+      <td>87.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>aggr_FSAS16T02_N1</td>
+      <td>282.28</td>
+      <td>241.21</td>
+      <td>41.06</td>
+      <td>85.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>aggr_FSAS16T02_N2</td>
+      <td>282.28</td>
+      <td>237.74</td>
+      <td>44.53</td>
+      <td>84.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>aggr_FSAS16T04_N3</td>
+      <td>205.29</td>
+      <td>201.11</td>
+      <td>4.17</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>aggr_FSAS16T04_N4</td>
+      <td>205.29</td>
+      <td>201.11</td>
+      <td>4.17</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>aggr_FSAS16T05_N3</td>
+      <td>333.6</td>
+      <td>330.38</td>
+      <td>3.21</td>
+      <td>99.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>aggr_FSAS16T05_N4</td>
+      <td>333.6</td>
+      <td>333.5</td>
+      <td>100.02</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>aggr_FSAS16T06_N3</td>
+      <td>320.77</td>
+      <td>303.29</td>
+      <td>17.47</td>
+      <td>95.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>aggr_FSAS16T06_N4</td>
+      <td>320.77</td>
+      <td>320.13</td>
+      <td>655.83</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>aggr_FSAS6T01_N1</td>
+      <td>212.03</td>
+      <td>191.4</td>
+      <td>20.63</td>
+      <td>90.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>aggr_FSAS6T01_N2</td>
+      <td>212.03</td>
+      <td>189.15</td>
+      <td>22.88</td>
+      <td>89.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>aggr_FSAS6T01_N3</td>
+      <td>212.03</td>
+      <td>148.9</td>
+      <td>63.13</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>aggr_FSAS6T01_N4</td>
+      <td>212.03</td>
+      <td>189.28</td>
+      <td>22.75</td>
+      <td>89.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>aggr_FSAS6T02_N1</td>
+      <td>212.03</td>
+      <td>182.35</td>
+      <td>29.68</td>
+      <td>86.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>aggr_FSAS6T02_N2</td>
+      <td>212.03</td>
+      <td>208.22</td>
+      <td>3.81</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>aggr_FSAS6T02_N3</td>
+      <td>212.03</td>
+      <td>193.06</td>
+      <td>18.97</td>
+      <td>91.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>aggr_FSAS6T02_N4</td>
+      <td>212.03</td>
+      <td>186.6</td>
+      <td>25.42</td>
+      <td>88.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>aggr_FSAS6TB_N5</td>
+      <td>303.6</td>
+      <td>627.9</td>
+      <td>303.59</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>aggr_FSAS8TB_N6</td>
+      <td>122.08</td>
+      <td>4.52</td>
+      <td>122.08</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>aggr_SAS1200G_N1</td>
+      <td>88.24</td>
+      <td>68.12</td>
+      <td>20.11</td>
+      <td>77.0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>aggr_SAS1200G_N2</td>
+      <td>88.24</td>
+      <td>37.6</td>
+      <td>50.63</td>
+      <td>43.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>aggr_SAS1200G_N3</td>
+      <td>88.24</td>
+      <td>79.15</td>
+      <td>9.09</td>
+      <td>90.0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>aggr_SAS1200G_N4</td>
+      <td>88.24</td>
+      <td>69.2</td>
+      <td>19.03</td>
+      <td>78.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>aggr_SSD_N5</td>
+      <td>34.57</td>
+      <td>25.05</td>
+      <td>9.51</td>
+      <td>72.0</td>
+    </tr>
+  </tbody>
+</table>
+            &nbsp;
+          
+  
+          <div class="box__content__arm col-md-6 d-flex flex-column texto-padrao-conteudo">
+            <p>
+            <strong>Total Aggregates:</strong> &nbsp;6.53&nbsp;PB
+            </p>
+            <p>
+            <strong>Utilizado:</strong> &nbsp;4.9&nbsp;PB&nbsp;-&nbsp; 75.10%
+            </p>
+            <p>
+            <strong>      Disponível:</strong> &nbsp;1.62&nbsp;PB&nbsp;-&nbsp; 24.90%
+            </p>
+          </div>
+          <div class="chart-storage col-md-3 d-flex flex-row-reverse">
+              {% include 'graficoStorageOlinda.html' %}
+          </div>
+        </div>
+         </div>
+       </div>
+    </div>
+    <div class="accordion-item fonte-accordion">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed fonte-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h4>Volumes</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="texto-padrao-conteudo">
+            <p>
+            <strong>Total:</strong> &nbsp; 4.7&nbsp;PB
+            | <strong>Snaps:</strong>&nbsp;215.36&nbsp;TB
+            </p>
+            </div>
+            <div class="texto-padrao-conteudo">
+              <p>
+              <strong>Utilizado:</strong> &nbsp; 3.57&nbsp;PB
+            | <strong>Snaps:</strong>&nbsp;43.43&nbsp;TB
+              </p>
+              <!--
+              <div class="chart-vol">
+                {% include 'graficoVolumesOlinda.html' %}
+              </div>
+              -->
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h1 class="text-center subtitulo-padrao-conteudo">Landsat</h1> 
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item fonte-accordion">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h4>Armazenamento</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="row d-flex align-items-center">
+            <div class="box__content__arm col-md-6 d-flex flex-column texto-padrao-conteudo">
+              <p>
+            <strong>Capacidade Líquida:</strong> &nbsp;1.42&nbsp;PB
+              </p>
+            <p>
+            <strong>Utilizado:</strong> &nbsp;1.29&nbsp;PB&nbsp;-&nbsp; 90.94%
+            </p>
+            <p>
+            <strong>Disponível:</strong> &nbsp;131.84&nbsp;TB&nbsp;-&nbsp; 9.06%
+            </p>
+            </div>
+            <div class="chart-storage col-md-6 d-flex flex-row-reverse">
+              {% include 'graficoStorageLandsat.html' %}
+            </div>
+            &nbsp;
+          </div>
+          <div class="container table_aggregates">
+          <h1 class="text-center subtitulo-padrao-conteudo">Aggregates</h1> 
+          <table border="1" class="dataframe" id="table-Landsat">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>Aggregate</th>
+      <th>Total</th>
+      <th>Usado</th>
+      <th>Disponível</th>
+      <th>% Usado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>landsat01_3tb_aggr1</td>
+      <td>281.06 TB</td>
+      <td>244.85 TB</td>
+      <td>36.21 TB</td>
+      <td>87.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>landsat01_4tb_aggr4</td>
+      <td>58.82 TB</td>
+      <td>35.19 TB</td>
+      <td>23.63 TB</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>landsat02_3tb_aggr1</td>
+      <td>281.06 TB</td>
+      <td>280.63 TB</td>
+      <td>442.19 GB</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>landsat02_4tb_aggr4</td>
+      <td>58.82 TB</td>
+      <td>57.78 TB</td>
+      <td>1.03 TB</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>landsat03_3tb_aggr1</td>
+      <td>191.73 TB</td>
+      <td>191.31 TB</td>
+      <td>432.64 GB</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>landsat03_3tb_aggr2</td>
+      <td>191.73 TB</td>
+      <td>166.52 TB</td>
+      <td>25.21 TB</td>
+      <td>87.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>landsat04_1tb_aggr2</td>
+      <td>200.77 TB</td>
+      <td>158.38 TB</td>
+      <td>42.39 TB</td>
+      <td>79.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>landsat04_3tb_aggr1</td>
+      <td>191.73 TB</td>
+      <td>189.22 TB</td>
+      <td>2.5 TB</td>
+      <td>99.0</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item fonte-accordion">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed fonte-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <h4>Volumes</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="texto-padrao-conteudo">
+            <p>
+            <strong>Total:</strong> &nbsp; 4.7&nbsp;PB
+            | <strong>Snaps:</strong>&nbsp;215.36&nbsp;TB
+            </p>
+            </div>
+            <div class="texto-padrao-conteudo">
+              <p>
+              <strong>Utilizado:</strong> &nbsp; 3.57&nbsp;PB
+            | <strong>Snaps:</strong>&nbsp;43.43&nbsp;TB
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+        
+    
+        <!-- Footer -->
+  <footer class="text-center text-lg-start fundo-escuro" id="footer">
+
+    <!-- Section: Links  -->
+    <section class="p-4">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <div class="footer">
+                <a class="navbar-brand header-logo text-light d-flex align-items-center" href="http://condado.cptec.inpe.br/site-gov-coids/index.html" id="footer">
+                  <img src="static/img/logo_COIDS_GRANDE-PhotoRoom.png" id="logo-coids" class="img-fluid"
+                    alt="logo-coids" />
+                  <h1>COIDS</h1>
+                </a>
+                <a class="navbar-brand header-logo text-light d-flex align-items-center mt-3"
+                  href="https://www.gov.br/inpe/pt-br" target="_blank">
+                  <img src="static/img/inpe_logo2023" id="logo-inpe" class="img-fluid" alt="logo-inpe" />
+                </a>
+              </div>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 titulo_footer">
+              Serviços
+            </h6>
+
+            <p>
+              <a class="text-reset" href="http://sssn.cptec.inpe.br/" target="_blank">3S Portal</a>
+            </p>
+            <p>
+              <a href="http://condado:8000/" class="text-reset" target="_blank">Netbox</a>
+            </p>
+            <p>
+              <a href="http://mansidao.cptec.inpe.br/wiki/" class="text-reset" target="_blank">Wiki</a>
+            </p>
+            <p>
+              <a href="http://juazeiro.cptec.inpe.br/ocomon_coids/login.php" class="text-reset"
+                target="_blank">Racktables</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 titulo_footer">
+              Estatísticas
+            </h6>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/estatisticas.html" class="text-reset">Aplicações</a>
+            </p>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/estatisticas.html" class="text-reset">Downloads</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 titulo_footer">
+              Contato
+            </h6>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/contato.html" class="text-reset">Secretaria</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 fonte_footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Sobre</h6>
+            <p>
+              <a href="http://condado.cptec.inpe.br/site-gov-coids/sobre.html" class="text-reset">A COIDS</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="container">
+      <div class="text-center p-4 d-flex fonte-footer" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="col-6 text-medium">2023 © COIDS - Coordenação de Infraestrutura de Dados e Supercomputação</div>
+        <div class="col-6 text-medium">Desenvolvimento: COIDS/WEB</div>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </div>
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--<script src="./static/js/controller.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#table-Olinda').DataTable({
+                pageLength: 25
+            });
+        });
+        $(document).ready( function () {
+            $('#table-Landsat').DataTable({
+                pageLength: 25
+            });
+        });
+        $(document).ready( function () {
+            $('#table-Amazonia').DataTable({
+                pageLength: 25
+            });
+        });
+        
+    </script>
+    
+    </body>
+    </html>
+    

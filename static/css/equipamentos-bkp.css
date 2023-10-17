@@ -1,0 +1,103 @@
+:root {
+    --preto-bg-inpe: #161617;
+    --amarelo-bg-inpe:#F29406;
+    --azul-bg-inpe:#0979B9;
+    --azulescuro-bg-inpe:#071d41;
+    --bege-bg-inpe:#E4DBCE;
+    --branco-bg-inpe:#FFFFFF;
+    
+}
+
+.table_equipamentos {
+    margin: 3rem 1rem 1rem 1rem;
+    flex-grow: 1; /* faz com que o conteúdo ocupe todo o espaço disponível */
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* para garantir que o rodapé fique sempre no final */
+}
+
+th {
+    background-color: var(--azulescuro-bg-inpe);
+    color: var(--branco-bg-inpe);
+}
+
+td {
+    background-color: #e5e5ff;
+    color: #161617;
+    border: 1px solid #161617;
+}
+
+
+.navbar {
+    height: 12.6rem;
+}
+
+.header-logo h1{
+    font-size: 60px;
+}
+
+.br-list {
+    padding-left: 5rem;
+}
+
+.br-item {
+    padding-left: 2rem;
+}
+
+.fundo-escuro {
+    background-color: var(--azulescuro-bg-inpe);
+}
+
+#fundo-escuro {
+    background-color: var(--azulescuro-bg-inpe);
+}
+
+img#logo__coids {
+    width: 6rem;
+}
+
+#header {
+    /* background-color: #F29406; */
+    background-color: var(--azulescuro-bg-inpe);
+}
+
+#header h1 {
+    color: var(--amarelo-bg-inpe);
+    text-shadow: 0.05em 0.01em var(--azul-bg-inpe);
+    font-family: 'Anton';
+}
+
+#menu__header {
+    background-color: var(--azulescuro-bg-inpe);
+    color: var(--amarelo-bg-inpe);
+    width: 9rem;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-weight: 600;
+    font-family: 'Rawline', Raleway, sans-serif;
+}
+
+#menu__header:hover {
+    color: var(--amarelo-bg-inpe);
+    text-shadow: 1px 1px 1.5px var(--amarelo-bg-inpe);
+    text-decoration: underline;
+    transform: scale(1.1); /* aumenta o tamanho */
+    transition: all 0.5s; /* adiciona transição suave */
+}
+
+#icon__menu {
+    color: var(--amarelo-bg-inpe);
+}
+
+.titulo_header {
+    color: var(--amarelo-bg-inpe);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Rawline', Raleway, sans-serif;
+    line-height: 21px;
+}

@@ -1,0 +1,36 @@
+# APLICAÇÃO PARA CONSULTA AO BD COM AS INFORMAÇÕES REFERENTES AO SISTEMA DE ARMAZENAMENTO 
+# E GERAÇÃO DE GRÁFICOS E TABELAS PARA MONITORAMENTO 
+# Desenvolvido pela equipe COIDS/WEB em 05/2023
+
+Desenvolvido utilizando as versões de Python e PIP:
+- Python 3.8.10
+- Pip 20.0.2
+
+-----------------------------------------------------
+Versões de bibliotecas:
+- Vide requirements.txt
+
+Porta: 5000 # Podendo ser alterada no final do arquivo app.py
+
+Rotas: app.py
+
+Comunicação com BD e Funções Search: connections.py
+
+Layout HTML Localizados em: templates/
+
+Folhas de Estilo: static/
+
+Configuração do Banco de Dados: .env
+
+------------------------------------------------------
+-------------- COMO SUBIR O AMBIENTE -----------------
+------------------------------------------------------
+
+Para Preparação do Ambiente, instale as bibliotecas:
+- pip install -r requirements.txt
+
+Com base no arquivo 'env_EXAMPLE':
+- crie o arquivo '.env' editando as configurações de acordo com o BD
+
+Execução da api:
+- python3 app.py
